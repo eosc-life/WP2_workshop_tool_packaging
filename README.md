@@ -11,8 +11,8 @@ This tutorial is based on the following software versions.
 
 ## Files
 
- 1.  meta.yaml : The Cellprofiler conda recipe file
- 2. LICENSE : License file for the conda recipe.
+ 1. recipes/cellprofiler/meta.yaml : The Cellprofiler conda recipe file
+ 2. recipes/cellprofiler/LICENSE : License file for the conda recipe.
  3. ExampleHuman : An example from Cellprofiler website
 
 ## Steps
