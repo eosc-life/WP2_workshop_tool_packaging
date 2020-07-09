@@ -1,6 +1,6 @@
 # Build Your Own Conda Recipe - Cellprofiler
 
-This tutorial aims to provide a step-by-step instruction on how to build your own conda recipe locally from scratch. Cellprofiler v3.1.9 was chosen as an example for illustration purpose, due to its popularity in the imaging field. The instructions in this tutorial can also be used as a general steps for creating recipe locally.
+This tutorial aims to provide a step-by-step instruction on how to build your own conda recipe locally from scratch. Cellprofiler v3.1.9 was chosen as an example for illustration purpose, due to its popularity in the imaging field. The instructions in this tutorial can also be used as general steps for creating recipe locally.
 
 ## Pre-requisite
 This tutorial is based on the following software versions.
