@@ -181,7 +181,7 @@ If you would like to contribute your recipe back to Bioconda repository, please 
 
  - Fork the official Bioconda recipe repository
  - Write a recipe or start with example template.
- - Push your recipe to GitHub. This triggers teh automatic building and testing of the recipe
- - Once tests passes, open a PR.  It will then be reviewed by other members of the Bioconda community.
+ - Push your recipe to GitHub. This triggers the automatic building and testing of the recipe
+ - Once test passes, open a PR.  It will then be reviewed by other members of the Bioconda community.
  - If review is successful your recipe will then get merged into the master branch.
 
