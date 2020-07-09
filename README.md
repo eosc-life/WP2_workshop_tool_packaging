@@ -50,7 +50,7 @@ The recipe must reside under `recipes/cellprofiler` . You can rename '`cellprofi
     mkdir -p ~/bcc2020/recipes/cellprofiler
     cd ~/bcc2020/recipes/cellprofiler
     touch meta.yaml
-Edit the recipe file. conda-forge provides an [example](https://github.com/conda-forge/staged-recipes/tree/master/recipes/example) template which you can use it to start developing recipes. 
+Edit the `meta.yaml` recipe file. conda-forge provides an [example](https://github.com/conda-forge/staged-recipes/tree/master/recipes/example) template which you can use it to start developing recipes. 
 
 `build` number start with 0 by default, remember to increase it every time creating new build.
 
