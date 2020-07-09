@@ -137,7 +137,7 @@ The below recipe is an example for Cellprofiler3.1.9. For detailed documentation
         - sunyi000
 **5. Create LICENSE file**
 
-create a license file named "LICENSE" in the same folder where meta.yaml reside. This file is required if you want to contribute back to the Bioconda repository. Your recipe will only work locally without it. We recommend following the [Bioconda guideline] (https://bioconda.github.io/contributor/index.html) whenever you are developing your recipe.
+create a license file named "LICENSE" in the same folder where meta.yaml reside. This file is required if you want to contribute back to the Bioconda repository. Your recipe will only work locally without it. We recommend following the [Bioconda guideline](https://bioconda.github.io/contributor/index.html) whenever you are developing your recipe.
 
 
 **6. Build recipe into local channel**
