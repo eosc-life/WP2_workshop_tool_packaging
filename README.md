@@ -177,7 +177,7 @@ Once the installation finishes, Cellprofiler is then ready to be used.
 If Cellprofiler installation was successful, you should see output files in the "`output`" folder.
 
 ## Contributing your recipe to Bioconda
-If you would like to contribute your recipe back to Bioconda recipe, please follow the Bioconda guideline carefully. At Step 4 you will need to fork the Bioconda repository.  The basic workflow is 
+If you would like to contribute your recipe back to Bioconda repository, please follow the Bioconda guideline carefully. At Step 4 you will need to fork the Bioconda repository.  The basic workflow is 
 
  - Fork the official Bioconda recipe repository
  - Write a recipe or start with example template.
