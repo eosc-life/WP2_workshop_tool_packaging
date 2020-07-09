@@ -59,7 +59,7 @@ Edit the `meta.yaml` recipe file. Conda-forge provides an [example template](htt
 
 `build` number start with 0 by default, remember to increase it every time creating new build.
 
-The below recipe is an example for CellProfiler 3.1.9. For detailed documentation on defining the recipe file, please visit [here](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html)
+The below recipe is an example for CellProfiler 3.1.9. For detailed documentation on defining the recipe file, please visit the [conda documentation](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html)
 
     {% set name = "CellProfiler" %}
     {% set version = "3.1.9" %}
