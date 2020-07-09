@@ -26,6 +26,7 @@ Cellprofiler v3.1.9  only supports Python2 therefore you will need to download t
 If you do not want to use the tool provided by Bioconda, you will need to install 'conda-build' to build the recipe locally.
 
 **2. Update conda and install conda-build**
+
 Update conda if you have old version of conda previously installed; install `conda-build` if local build is needed. 
 
      conda update conda
@@ -34,6 +35,7 @@ Check conda and conda-build with the following command.
 
     conda info 
 **3. Add conda channels**
+
 Software packages specified in recipe files must exist in conda channels. We recommend only use packages from `bioconda` and `conda-forge` channels.  To add channels, run the following commands
 
     conda config --add channels conda-forge
@@ -41,6 +43,7 @@ Software packages specified in recipe files must exist in conda channels. We rec
 You could also add desired channels by manually editing  `.condarc` file, located in your home folder `~/.condarc`. The .condarc file is not included by default, but it is automatically created in your home directory the first time you run the `conda config` command.
 
 **4. Create Cellprofiler Recipe file**
+
 Create meta.yaml file in recipe folder, for example `~/bcc2020/recipes/cellprofiler`
 The recipe must reside under `recipes/cellprofiler` . You can rename '`cellprofiler`' with something else but the parent folder "`recipes`" can not be renamed.
 
@@ -131,10 +134,12 @@ The below recipe is an example for Cellprofiler3.1.9. For detailed documentation
       recipe-maintainers:
         - sunyi000
 **5. Create LICENSE file**
+
 create a license file named "LICENSE" in the same folder where meta.yaml reside. This file is required if you want to contribute back to the Bioconda repository. Your recipe will only work locally without it. We recommend following the [Bioconda guideline] (https://bioconda.github.io/contributor/index.html)whenever your are developing your recipe.
 
 
 **6. Build recipe into local channel**
+
 go to the 'cellprofiler' folder created in Step 4. Run the below command
 
     conda build .
@@ -152,6 +157,7 @@ Activate the environment with
     conda activate cp319
 
 **8. Install from local channel**
+
 Since we are installing Cellprofiler from local channel, we will need to specify in the `conda install` command 
 
     conda install --use-local cellprofiler
