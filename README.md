@@ -52,6 +52,8 @@ The recipe must reside under `recipes/cellprofiler` . You can rename '`cellprofi
     touch meta.yaml
 Edit the recipe file. conda-forge provides an [example](https://github.com/conda-forge/staged-recipes/tree/master/recipes/example) template which you can use it to start developing recipes. 
 
+build number start with 0 by default, remember to increase it every time creating new build.
+
 The below recipe is an example for Cellprofiler3.1.9. For detailed documentation on defining the recipe file, please visit [here](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html)
 
     {% set name = "CellProfiler" %}
