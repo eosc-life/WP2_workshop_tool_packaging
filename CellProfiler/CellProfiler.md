@@ -179,8 +179,8 @@ Once the installation finishes, CellProfiler is then ready to be used.
 ## Test CellProfiler installation
 
 1. Go to [https://cellprofiler.org/examples](https://cellprofiler.org/examples/) to download an example image from the human cell dataset.
-2. Make sure conda environment cp319 is activated.
-3. Unzip and go to the ExampleHuman folder.
+2. Make sure conda environment `cp319` is activated.
+3. Unzip and go to the `ExampleHuman` folder.
 4. Create a folder `output` to store analysis output files.
 5. Run.
 
