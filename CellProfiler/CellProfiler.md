@@ -12,9 +12,9 @@ This tutorial is based on the following software versions:
 
 ## Files
 
- 1. `recipes/cellprofiler/meta.yaml`: The CellProfiler conda recipe file.
- 2. `recipes/cellprofiler/LICENSE`: License file for the conda recipe.
- 3. `ExampleHuman`: An example dataset from the CellProfiler website.
+ - `recipes/cellprofiler/meta.yaml`: The CellProfiler conda recipe file.
+ - `recipes/cellprofiler/LICENSE`: License file for the conda recipe.
+ - `ExampleHuman`: An example dataset from the CellProfiler website.
 
 ## Steps
 
@@ -49,7 +49,7 @@ You could also add the desired channels by manually editing the `.condarc` file,
 ### 4. Create the CellProfiler recipe file
 
 Create the `meta.yaml` file in recipe folder, for example `~/bcc2020/recipes/cellprofiler`
-The recipe must reside under `recipes/cellprofiler`. You can rename '`cellprofiler`' with something else, but the parent folder "`recipes`" can not be renamed.
+The recipe must reside under `recipes/cellprofiler`. You can rename `cellprofiler` with something else, but the parent folder `recipes` should not be renamed.
 
     mkdir -p ~/bcc2020/recipes/cellprofiler
     cd ~/bcc2020/recipes/cellprofiler
@@ -57,9 +57,9 @@ The recipe must reside under `recipes/cellprofiler`. You can rename '`cellprofil
     
 Edit the `meta.yaml` recipe file. Conda-forge provides an [example template](https://github.com/conda-forge/staged-recipes/tree/master/recipes/example) which you can use to start developing recipes. 
 
-`build` number start with 0 by default, remember to increase it every time creating new build.
+The `build` number start with 0 by default, remember to increase it every time creating new build.
 
-The below recipe is an example for CellProfiler 3.1.9. For detailed documentation on defining the recipe file, please visit the [conda documentation](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html)
+The below recipe is an example for CellProfiler 3.1.9. For detailed documentation on defining the recipe file, please visit the [conda documentation](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html).
 
     {% set name = "CellProfiler" %}
     {% set version = "3.1.9" %}
@@ -71,6 +71,7 @@ The below recipe is an example for CellProfiler 3.1.9. For detailed documentatio
     source:
       url: https://github.com/CellProfiler/{{ name  }}/archive/v{{ version }}.tar.gz
       sha256: "44e10c57980b4fd20f530dd5dc8c8bea9c870000601e12d500c27d145ca2ee9f"
+      
     build:
       number: 3
       script: "{{ PYTHON }} -m pip install --no-deps --ignore-installed . -vv"
@@ -80,6 +81,7 @@ The below recipe is an example for CellProfiler 3.1.9. For detailed documentatio
     requirements:
       build:
         - {{ compiler('c') }}
+        
       host:
         - python
         - pip
@@ -137,21 +139,22 @@ The below recipe is an example for CellProfiler 3.1.9. For detailed documentatio
       summary: "CellProfiler is free, open-source software for quantitative analysis of biological images"
       description: |
          CellProfiler is free, open-source software for quantitative analysis of biological images.
+         
     extra:
       recipe-maintainers:
         - sunyi000
         
-### 5. Create LICENSE file
+### 5. Create the LICENSE file
 
-Create a license file named "LICENSE" in the same folder where `meta.yaml` reside. This file is required if you want to contribute back to the Bioconda repository. Your recipe will only work locally without it. We recommend following the [Bioconda guidelines](https://bioconda.github.io/contributor/index.html) whenever you are developing your recipe.
+Create a license file named `LICENSE` in the same folder where `meta.yaml` reside. This file is required if you want to contribute back to the Bioconda repository. Your recipe will only work locally without it. We recommend following the [Bioconda guidelines](https://bioconda.github.io/contributor/index.html) whenever you are developing your recipe.
 
 ### 6. Build recipe into local channel
 
-Go to the 'cellprofiler' folder created in Step 4. Run the below command:
+Go to the `cellprofiler` folder created in Step 4. Run the below command:
 
     conda build .
 
-You can also build from the "recipes" folder:
+You can also build from the `recipes` folder:
 
     conda build cellprofiler
     
@@ -178,12 +181,12 @@ Once the installation finishes, CellProfiler is then ready to be used.
 1. Go to [https://cellprofiler.org/examples](https://cellprofiler.org/examples/) to download an example image from the human cell dataset.
 2. Make sure conda environment cp319 is activated.
 3. Unzip and go to the ExampleHuman folder.
-4. Create a folder "output" to store analysis output files.
+4. Create a folder `output` to store analysis output files.
 5. Run.
 
 `cellprofiler -r -c -i images -p ExampleHuman.cppipe -o output`
 
-If CellProfiler installation was successful, you should see output files in the "`output`" folder.
+If CellProfiler installation was successful, you should see output files in the `output` folder.
 
 ## Contributing your recipe to Bioconda
 
