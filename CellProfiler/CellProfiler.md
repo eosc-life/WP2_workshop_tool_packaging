@@ -17,7 +17,7 @@ This tutorial is based on the following software versions:
  - `recipes/cellprofiler/LICENSE`: License file for the conda recipe.
  - `ExampleHuman`: An example dataset from the CellProfiler website.
  
-**Note: The recipe provided here only runs cellprofiler in headless and batch mode. If you need to run CellProfiler UI, refer to "Run CellProfiler with UI" section at the bottom of this page.**
+**Note: The recipe provided here only runs CellProfiler in headless and batch mode. If you need to run CellProfiler with a graphical user interface, please refer to the section "Run CellProfiler with GUI" at the bottom of this page.**
 
 ## Steps
 
@@ -181,7 +181,7 @@ Once the installation finishes, CellProfiler is then ready to be used.
 
 ## Test CellProfiler installation
 
-1. Go to [https://cellprofiler.org/examples](https://cellprofiler.org/examples/) to download an example image from the human cell dataset.
+1. Go to the [CellProfiler website](https://cellprofiler.org/examples/) to download an example image from the human cell dataset.
 2. Make sure conda environment `cp319` is activated.
 3. Unzip and go to the `ExampleHuman` folder.
 4. Create a folder `output` to store analysis output files.
@@ -191,24 +191,25 @@ Once the installation finishes, CellProfiler is then ready to be used.
 
 If CellProfiler installation was successful, you should see output files in the `output` folder.
 
-## Run CellProfiler with UI
-The meta.yaml recipe above only enables you to start CellProfiler in headless mode. If you need UI, additional software package `wxpython` from thrid party conda channels are required. These channels are not maintained by biconda community. CellProfiler recommend "daf" channel for its UI dependencies, and the version of `wxpython` must be `3.0.2.0` for CellProfiler v3.19. 
+## Run CellProfiler with GUI
 
-To enable UI, there are two ways
+The `meta.yaml` recipe above only enables you to start CellProfiler in headless mode. If you need a GUI, an additional software package called `wxpython` from a third-party conda channel is required. The third-party channels are not maintained by the bioconda community. CellProfiler recommends the `daf` channel for its GUI dependencies, and the version of `wxpython` must be `3.0.2.0` for CellProfiler v3.1.9. 
 
-**Option 1:**
+There are to ways to enable the GUI:
 
-- At Step 3, add "daf" channel to conda. Make sure it is at the bottom of your `.condarc` file. 
+**Option 1**
+
+- At step 3, add `daf` channel to conda. Make sure it is at the bottom of your `.condarc` file:
 
 `conda config --add channels daf`
 
-- At Step 4, add the following dependency to the `run` section of the recipe file.
+- At step 4, add the following dependency to the `run` section of the recipe file:
 
 `wxpython =3.0.2.0`
 
-**Option 2:**
+**Option 2**
 
-At Step 8, install `wxpython=3.0.2.0` 
+- At step 8, install `wxpython=3.0.2.0` 
 
 `conda install -c daf wxpython=3.0.2.0 `
 
