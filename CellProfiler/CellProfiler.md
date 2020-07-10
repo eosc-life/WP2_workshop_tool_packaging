@@ -1,3 +1,4 @@
+
 # Build Your Own Conda Recipe - CellProfiler
 
 This tutorial aims to provide a step-by-step instruction on how to build your own conda recipe locally from scratch. CellProfiler v3.1.9 was chosen as an example for illustration purposes, due to its popularity in the imaging field. The instructions in this tutorial can also be used as general steps for creating a recipe locally.
@@ -15,6 +16,8 @@ This tutorial is based on the following software versions:
  - `recipes/cellprofiler/meta.yaml`: The CellProfiler conda recipe file.
  - `recipes/cellprofiler/LICENSE`: License file for the conda recipe.
  - `ExampleHuman`: An example dataset from the CellProfiler website.
+ 
+**Note: The recipe provided here only runs cellprofiler in headless and batch mode. If you need to run CellProfiler UI, refer to "Run CellProfiler with UI" section at the bottom of this page.**
 
 ## Steps
 
@@ -198,3 +201,24 @@ If you would like to contribute your recipe back to the Bioconda repository, ple
 4. Once test passes, open a PR. It will then be reviewed by other members of the Bioconda community.
 5. If the review is successful, your recipe will then get merged into the master branch.
 
+
+## Run CellProfiler with UI
+The meta.yaml recipe above only enables you to start CellProfiler in headless mode. If you need UI, additional software package `wxpython` from thrid party conda channels are required. These channels are not maintained by biconda community. CellProfiler recommend "daf" channel for its UI dependencies, and the version of `wxpython` must be `3.0.2.0` for CellProfiler v3.19. 
+
+To enable UI, there are two ways
+
+**Option 1:**
+
+- At Step 3, add "daf" channel to conda. Make sure it is at the bottom of your `.condarc` file. 
+
+`conda config --add channels daf`
+
+- At Step 4, add the following dependency to the `run` section of the recipe file.
+
+`wxpython =3.0.2.0`
+
+**Option 2:**
+
+At Step 8, install `wxpython=3.0.2.0` 
+
+`conda install -c daf wxpython=3.0.2.0 `
