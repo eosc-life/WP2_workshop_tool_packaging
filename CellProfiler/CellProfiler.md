@@ -5,10 +5,10 @@ This tutorial aims to provide a step-by-step instruction on how to build your ow
 ## Pre-requisites
 
 This tutorial is based on the following software versions:
- 1. Anaconda or Miniconda
- 2. Python 2.7
- 3. conda 4.8
- 4. conda-build 3.18 
+ - Anaconda or Miniconda
+ - Python 2.7
+ - conda 4.8
+ - conda-build 3.18 
 
 ## Files
 
@@ -18,15 +18,15 @@ This tutorial is based on the following software versions:
 
 ## Steps
 
-**1. Install Anaconda/Miniconda and conda-build**
+### 1. Install Anaconda/Miniconda and conda-build
 
-CellProfiler v3.1.9 only supports Python 2. Therefore, you will need to download the respective version of Miniconda [here](https://docs.conda.io/projects/conda/en/latest/user-guide/install/).
+CellProfiler v3.1.9 only supports Python 2. Therefore, you will need to download the respective version of Miniconda from [here](https://docs.conda.io/projects/conda/en/latest/user-guide/install/).
 
  Bioconda provides [tools for testing your recipe locally](https://bioconda.github.io/contributor/building-locally.html#using-the-circle-ci-client).
 
-If you do not want to use the tool provided by Bioconda, you will need to install 'conda-build' to build the recipe locally.
+If you do not want to use the tool provided by Bioconda, you will need to install `conda-build` to build the recipe locally.
 
-**2. Update conda and install conda-build**
+### 2. Update conda and install conda-build
 
 Update conda if you have an old version of conda previously installed; install `conda-build` if a local build is needed. 
 
@@ -37,7 +37,7 @@ Check conda and conda-build with the following command.
 
     conda info 
     
-**3. Add conda channels**
+### 3. Add conda channels
 
 The software packages specified in the recipe files must exist in conda channels. We recommend you to use only packages from `bioconda` and `conda-forge` channels. To add channels, run the following commands:
 
@@ -46,7 +46,7 @@ The software packages specified in the recipe files must exist in conda channels
     
 You could also add the desired channels by manually editing the `.condarc` file, located in your home folder `~/.condarc`. The `.condarc` file is not included by default, but it is automatically created in your home directory the first time you run the `conda config` command.
 
-**4. Create the CellProfiler recipe file**
+### 4. Create the CellProfiler recipe file
 
 Create the `meta.yaml` file in recipe folder, for example `~/bcc2020/recipes/cellprofiler`
 The recipe must reside under `recipes/cellprofiler`. You can rename '`cellprofiler`' with something else, but the parent folder "`recipes`" can not be renamed.
@@ -141,11 +141,11 @@ The below recipe is an example for CellProfiler 3.1.9. For detailed documentatio
       recipe-maintainers:
         - sunyi000
         
-**5. Create LICENSE file**
+### 5. Create LICENSE file
 
 Create a license file named "LICENSE" in the same folder where `meta.yaml` reside. This file is required if you want to contribute back to the Bioconda repository. Your recipe will only work locally without it. We recommend following the [Bioconda guidelines](https://bioconda.github.io/contributor/index.html) whenever you are developing your recipe.
 
-**6. Build recipe into local channel**
+### 6. Build recipe into local channel
 
 Go to the 'cellprofiler' folder created in Step 4. Run the below command:
 
@@ -155,7 +155,7 @@ You can also build from the "recipes" folder:
 
     conda build cellprofiler
     
-**7. Create a conda environment**
+### 7. Create a conda environment
 
     conda create -n cp319 python=2.7
     
@@ -165,7 +165,7 @@ Activate the environment with:
 
     conda activate cp319
 
-**8. Install from local channel**
+### 8. Install from local channel
 
 Since we are installing CellProfiler from the local channel, we will need to specify in the `conda install` command:
 
