@@ -191,17 +191,6 @@ Once the installation finishes, CellProfiler is then ready to be used.
 
 If CellProfiler installation was successful, you should see output files in the `output` folder.
 
-## Contributing your recipe to Bioconda
-
-If you would like to contribute your recipe back to the Bioconda repository, please follow the Bioconda guideline carefully. At step 4, you will need to fork the Bioconda repository. The basic workflow is:
-
-1. Fork the official Bioconda recipe repository.
-2. Write a recipe or start with the example template.
-3. Push your recipe to GitHub. This triggers the automatic building and testing of the recipe.
-4. Once test passes, open a PR. It will then be reviewed by other members of the Bioconda community.
-5. If the review is successful, your recipe will then get merged into the master branch.
-
-
 ## Run CellProfiler with UI
 The meta.yaml recipe above only enables you to start CellProfiler in headless mode. If you need UI, additional software package `wxpython` from thrid party conda channels are required. These channels are not maintained by biconda community. CellProfiler recommend "daf" channel for its UI dependencies, and the version of `wxpython` must be `3.0.2.0` for CellProfiler v3.19. 
 
@@ -222,3 +211,13 @@ To enable UI, there are two ways
 At Step 8, install `wxpython=3.0.2.0` 
 
 `conda install -c daf wxpython=3.0.2.0 `
+
+## Contributing your recipe to Bioconda
+
+If you would like to contribute your recipe back to the Bioconda repository, please follow the Bioconda guideline carefully. At step 4, you will need to fork the Bioconda repository. The basic workflow is:
+
+1. Fork the official Bioconda recipe repository.
+2. Write a recipe or start with the example template.
+3. Push your recipe to GitHub. This triggers the automatic building and testing of the recipe.
+4. Once test passes, open a PR. It will then be reviewed by other members of the Bioconda community.
+5. If the review is successful, your recipe will then get merged into the master branch.
