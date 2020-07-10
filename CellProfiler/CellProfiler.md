@@ -17,7 +17,7 @@ This tutorial is based on the following software versions:
  - `recipes/cellprofiler/LICENSE`: License file for the conda recipe.
  - `ExampleHuman`: An example dataset from the CellProfiler website.
  
-**Note: The recipe provided here only runs CellProfiler in headless and batch mode. If you need to run CellProfiler with a graphical user interface, please refer to the section "Run CellProfiler with GUI" at the bottom of this page.**
+**Note: The recipe provided here only runs CellProfiler in headless and batch mode. If you need to run CellProfiler with a graphical user interface, please refer to the section [Run CellProfiler with GUI](#Run-CellProfiler-with-GUI) at the bottom of this page.**
 
 ## Steps
 
