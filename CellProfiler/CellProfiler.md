@@ -192,9 +192,9 @@ If CellProfiler installation was successful, you should see output files in the 
 
 If you would like to contribute your recipe back to the Bioconda repository, please follow the Bioconda guideline carefully. At step 4, you will need to fork the Bioconda repository. The basic workflow is:
 
- - Fork the official Bioconda recipe repository.
- - Write a recipe or start with the example template.
- - Push your recipe to GitHub. This triggers the automatic building and testing of the recipe.
- - Once test passes, open a PR. It will then be reviewed by other members of the Bioconda community.
- - If the review is successful, your recipe will then get merged into the master branch.
+1. Fork the official Bioconda recipe repository.
+2. Write a recipe or start with the example template.
+3. Push your recipe to GitHub. This triggers the automatic building and testing of the recipe.
+4. Once test passes, open a PR. It will then be reviewed by other members of the Bioconda community.
+5. If the review is successful, your recipe will then get merged into the master branch.
 
