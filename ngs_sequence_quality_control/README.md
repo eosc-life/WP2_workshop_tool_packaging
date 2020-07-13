@@ -132,7 +132,6 @@ Warning: 'defaults' already in 'channels' list, moving to the top
            offline mode : False
 ```    
 </details>
-</br>
 
 The `conda config` command updates the `.condarc` file, located in your home folder `~/.condarc`.
 
@@ -149,8 +148,6 @@ channels:
   - defaults
 ```    
 </details>
-</br>
-
 
 *You can also add desired channels by manually editing the `.condarc` file.*
 
@@ -171,7 +168,6 @@ To perform the NGS sequence quality control, you need two tools: FastQC (0.11.9)
 /usr/bin/which: no cutadapt in (/opt/python/bin:/opt/python3/bin:/opt/pypy/bin:/opt/pypy3/bin:/usr/local/java/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/opt/dell/srvadmin/bin:/usr/local/public/bin:/home/fr2424/sib/lgueguen/bin:/home/fr2424/sib/lgueguen/bin)
 ```    
 </details>
-</br>
 
 Check if Conda packages are available for them, and which version.
 
@@ -286,7 +282,6 @@ cutadapt                        2.10  py37h516909a_0  bioconda
 cutadapt                        2.10  py37hf01694f_1  bioconda
 ```    
 </details>
-</br>
 
 The `conda search` command searches for packages in the currently configured channels and displays associated information (origin channel, version and build numbers). 
     
@@ -445,7 +440,6 @@ Executing transaction: done
 #     $ conda deactivate
 ```    
 </details>
-</br>
 
 *If the tool version is omitted (e.g `=0.11.9`), the latest version of the tool will be installed:*
 
@@ -467,7 +461,6 @@ cutadapt-2.10            /home/fr2424/sib/lgueguen/miniconda3/envs/cutadapt-2.10
 fastqc-0.11.9            /home/fr2424/sib/lgueguen/miniconda3/envs/fastqc-0.11.9
 ```    
 </details>
-</br>
 
 You can activate and deactivate an environment with the following commands:
 
@@ -488,7 +481,6 @@ Now, activate one environment, and check that the tool is available:
 ~/miniconda3/envs/fastqc-0.11.9/bin/fastqc
 ```    
 </details>
-</br>
 
 FastQC has been installed, along with all necessary dependencies. You can display them with:
 
@@ -548,7 +540,6 @@ zstd                      1.4.4                h6597ccf_3    conda-forge
 (fastqc-0.11.9) [lgueguen@n221 demo]$ conda deactivate
 ```    
 </details>
-</br>
 
 *Note that it is possible to install, update and uninstall packages with the following commands:*
 
@@ -628,13 +619,12 @@ reads-fw.fastq  reads-fw_fastqc  reads-fw_fastqc.html  reads-fw_fastqc.zip
 (fastqc-0.11.9) [lgueguen@n221 demo]$ conda deactivate
 ```    
 </details>
-</br>
 
 FastQC generates an [HTML report](datasets/reads-fw_fastqc.html), with multiple diagnostic plots.
 
 Below is the plot representing per base sequence quality. 
 
-![raw_per base quality](datasets/reads-fw_fastqc/images/per_base_quality.png)
+![raw_per base quality](datasets/reads-fw_fastqc/Images/per_base_quality.png)
 
 On the x-axis are the base position in the read. In this example, the sample contains reads that are 37 base pairs long. The y-axis shows the quality scores. The higher the score, the better the base call. The background of the graph divides the y-axis into very good quality scores (green), scores of reasonable quality (orange), and reads of poor quality (red).
 
@@ -679,7 +669,6 @@ Total written (filtered):        367,098 bp (99.2%)
 (cutadapt-2.10) [lgueguen@n221 demo]$ conda deactivate
 ```    
 </details>
-</br>
 
 Run FastQC again on the trimmed data file to control the quality (don't forget to switch the conda environment!):
 
@@ -698,11 +687,10 @@ reads-fw.fastq   reads-fw_fastqc.html  reads-fw-trim.fastq   reads-fw-trim_fastq
 (fastqc-0.11.9) [lgueguen@n221 demo]$ conda deactivate
 ```    
 </details>
-</br>
 
 The quality of the previous dataset was pretty good from the beginning and we improved it with trimming and filtering step (in a reasonable way to not lose too much information) as you can see on the plot below and on the [HTML report](datasets/reads-fw-trim_fastqc.html).
 
-![trimmed_per base quality](datasets/reads-fw-trim_fastqc/images/per_base_quality.png)
+![trimmed_per base quality](datasets/reads-fw-trim_fastqc/Images/per_base_quality.png)
 
 ### What is next?
 
