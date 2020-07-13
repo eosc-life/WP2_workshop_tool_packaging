@@ -1,0 +1,14 @@
+This is cutadapt 2.10 with Python 3.7.6
+Command line parameters: --output=reads-fw-trim.fastq --error-rate=0.1 --times=1 --overlap=3 --minimum-length=20 --quality-cutoff=20 reads-fw.fastq
+Processing reads on 1 core in single-end mode ...
+Finished in 0.18 s (18 us/read; 3.32 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  10,000
+Reads with adapters:                         0 (0.0%)
+Reads written (passing filters):         9,988 (99.9%)
+
+Total basepairs processed:       370,000 bp
+Quality-trimmed:                   2,736 bp (0.7%)
+Total written (filtered):        367,098 bp (99.2%)
