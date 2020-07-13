@@ -80,8 +80,7 @@ The below recipe is an example for CellProfiler 3.1.9. For detailed documentatio
     build:
       number: 3
       script: "{{ PYTHON }} -m pip install --no-deps --ignore-installed . -vv"
-      skip: True  # [win]
-      skip: True  # [osx]
+      skip: True  # [win or osx or py3k]
     
     requirements:
       build:
