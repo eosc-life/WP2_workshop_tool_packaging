@@ -23,7 +23,7 @@
   * [Introduction to the fastq format](#introduction-to-the-fastq-format)
   * [Control quality with FastQC](#control-quality-with-fastqc)
   * [Filter and trim with Cutadapt](#filter-and-trim-with-cutadapt)
-  * [What is next?](#what-is-next-)
+  * [What is next?](#what-is-next)
 - [Conda and reproducible science](#conda-and-reproducible-science)
 - [Conclusion](#conclusion)
 - [References](#references)
