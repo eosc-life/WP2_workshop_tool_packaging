@@ -62,6 +62,8 @@ Edit the `meta.yaml` recipe file. Conda-forge provides an [example template](htt
 
 The `build` number start with 0 by default, remember to increase it every time creating new build.
 
+`script` is used for short build scripts. If your build logic is complicated, Bioconda recommends using [scripts](https://docs.conda.io/projects/conda-build/en/latest/resources/build-scripts.html) `build.sh` (for Linux or OSX) or `build.bat` (for Windows) to carry our your build steps.
+
 The below recipe is an example for CellProfiler 3.1.9. For detailed documentation on defining the recipe file, please visit the [conda documentation](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html).
 
     {% set name = "CellProfiler" %}
@@ -144,6 +146,8 @@ The below recipe is an example for CellProfiler 3.1.9. For detailed documentatio
          CellProfiler is free, open-source software for quantitative analysis of biological images.
          
     extra:
+      identifiers:
+        - biotools:CellProfiler
       recipe-maintainers:
         - sunyi000
         
