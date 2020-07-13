@@ -1,0 +1,11 @@
+PASS	Basic Statistics	reads-fw.fastq
+PASS	Per base sequence quality	reads-fw.fastq
+PASS	Per tile sequence quality	reads-fw.fastq
+PASS	Per sequence quality scores	reads-fw.fastq
+FAIL	Per base sequence content	reads-fw.fastq
+WARN	Per sequence GC content	reads-fw.fastq
+PASS	Per base N content	reads-fw.fastq
+PASS	Sequence Length Distribution	reads-fw.fastq
+PASS	Sequence Duplication Levels	reads-fw.fastq
+WARN	Overrepresented sequences	reads-fw.fastq
+PASS	Adapter Content	reads-fw.fastq
