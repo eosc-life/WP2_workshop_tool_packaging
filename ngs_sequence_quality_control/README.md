@@ -589,7 +589,7 @@ Saving to: “reads-fw.fastq”
 
 2020-07-13 19:25:09 (8.73 MB/s) - “reads-fw.fastq” saved [1310295/1310295]
 
-    (base) [lgueguen@n221 demo]$ ls
+(base) [lgueguen@n221 demo]$ ls
 reads-fw.fastq
 ```    
 </details>
