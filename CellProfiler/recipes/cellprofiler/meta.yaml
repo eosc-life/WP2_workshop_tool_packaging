@@ -11,8 +11,7 @@ source:
 build:
   number: 3
   script: "{{ PYTHON }} -m pip install --no-deps --ignore-installed . -vv"
-  skip: True  # [win]
-  skip: True  # [osx]
+  skip: True  # [win or osx or py3k]
 
 requirements:
   build:
@@ -75,5 +74,7 @@ about:
   description: |
      CellProfiler is free, open-source software for quantitative analysis of biological images.
 extra:
+  identifiers:
+    - biotools:CellProfiler
   recipe-maintainers:
     - sunyi000
