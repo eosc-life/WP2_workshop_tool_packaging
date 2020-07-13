@@ -215,7 +215,7 @@ There are to ways to enable the GUI:
 
 ## Contributing your recipe to Bioconda
 
-If you would like to contribute your recipe back to the Bioconda repository, please follow the Bioconda guideline carefully. At step 4, you will need to fork the Bioconda repository. The basic workflow is:
+If you would like to contribute your recipe back to the Bioconda repository, please follow the [Bioconda guidelines](https://bioconda.github.io/contributor/guidelines.html). At step 4, you will need to fork the Bioconda repository. The basic workflow is:
 
 1. Fork the official Bioconda recipe repository.
 2. Write a recipe or start with the example template.
