@@ -31,12 +31,26 @@ process ambermin {
     file 'min.in' from file(min)
 
     output:
-    file 'wt1mg_min_water.out' into result
+    file 'wt1mg_min.rst' into restmin
 
     """
     sander -O -i min.in -p wt1mg.parm7 -c wt1mg.crd -r wt1mg_min.rst -o wt1mg_min_water.out -ref wt1mg.crd
     """
 
+}
+
+process viewpdb {
+
+    container='andreagia/ambertools20conda'
+    input:
+    file 'wt1mg_min.rst' from restmin
+    file 'wt1mg.parm7' from parms
+    output:
+    file 'wt1mg_solvated_min.pdb' into result
+
+    """
+    ambpdb -p wt1mg.parm7 -c  wt1mg_min.rst > wt1mg_solvated_min.pdb
+    """
 
 }
 
