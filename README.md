@@ -11,10 +11,10 @@
 
 | Duration | Topic           |
 | --------: |:------------- |
-|   30 min | Introduction to conda & BioConda |
+|   30 min | Introduction to Conda & BioConda |
 |   90 min | Hands-on session    | 
 |   20 min | Introduction to BioContainers      | 
 |   10 min | Wrap-up      | 
 
 
-[More details (goals, prerrequisites, training materials, etc.)](https://docs.google.com/document/d/1uowLhMxMpaJc7kleDZe8KjCxwej4gKLpbUXruaCFqeI/edit)
+[More details (goals, prerequisites, training materials, etc.)](https://docs.google.com/document/d/1uowLhMxMpaJc7kleDZe8KjCxwej4gKLpbUXruaCFqeI/edit)
