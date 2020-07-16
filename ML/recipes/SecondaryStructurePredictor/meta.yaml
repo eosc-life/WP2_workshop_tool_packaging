@@ -14,7 +14,7 @@ source:
 
 build:
   number: 0
-  # out tool is pure python and do not need to be installed.
+  # out tool is pure python and do not need to be installed..
   script: "{{ PYTHON }} -m pip install --no-deps --ignore-installed . -vv"
 
 
