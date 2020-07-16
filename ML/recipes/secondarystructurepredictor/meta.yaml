@@ -1,0 +1,46 @@
+
+{% set name = "SecondaryStructurePredictor" %}
+{% set version = "0.1" %}
+
+package:
+  name: "{{ name|lower }}"
+  version: "{{ version }}"
+
+source:
+  #url: https://github.com/vinclaveglia/secondary_structure_prediction/archive/master.zip
+  url: https://github.com/vinclaveglia/bcc_2020_packaging/archive/master.tar.gz
+  #url: https://github.com/vinclaveglia/bcc_2020_packaging/blob/master/dist/SecondaryStructurePredictor-0.1dev.tar.gz
+
+
+build:
+  number: 0
+  # out tool is pure python and do not need to be installed..
+  script: "{{ PYTHON }} -m pip install --no-deps --ignore-installed . -vv"
+
+
+
+requirements:
+  host:
+    - python
+  run:
+    - python
+    - pytorch-cpu
+    - scikit-learn >=0.20
+
+test:
+  import:
+    - SecondaryStructurePredictor
+
+  #source_files:
+  #  - struc_classifier_SD2_0.7907
+  #  - predict.py
+  #  - secStructPredictor.py
+    #- run_test.py
+
+  #commands:
+  #  - python predict.py "AAAA"
+
+
+extra:
+  recipe-maintainers:
+    - vinclaveglia
