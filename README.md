@@ -13,7 +13,7 @@
 | --------: |:------------- |
 |   30 min | Introduction to Conda & BioConda |
 |   90 min | Hands-on session    | 
-|   20 min | Introduction to BioContainers      | 
+|   20 min | Introduction to containers and BioContainers      | 
 |   10 min | Wrap-up      | 
 
 
