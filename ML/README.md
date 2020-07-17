@@ -109,7 +109,7 @@ conda activate secPredEnv
 ```
 conda install --use-local secondarystructurepredictor
 ```
-and check the installed packages in the environment with `conda list`.
+Check the installed packages in the environment with `conda list`.
 
 To uninstall the package, just type `conda uninstall secondarystructurepredictor`.
 
