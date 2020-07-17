@@ -30,7 +30,7 @@
 
 ## Introduction
 
-High Throughput Sequencing (HTS) or Next-Generation Sequencing (NGS) technologies generate a massive number of sequence reads (a succession of nucleotides). However, they will generate different types and amount of errors, such as incorrect nucleotides being called. Therefore, the first step in HTS data analysis often is to understand, identify and exclude error-types that may impact the interpretation of downstream analysis. 
+High Throughput Sequencing (HTS) or Next-Generation Sequencing (NGS) technologies generates a massive number of sequence reads (a succession of nucleotides). However, they will generate different types and amount of errors, such as incorrect nucleotides being called. Therefore, the first step in HTS data analysis often is to understand, identify and exclude error-types that may impact the interpretation of downstream analysis. 
 
 This tutorial will provide hands-on experience using Conda packages to perform quality control checks and get your data ready for downstream analysis with the tools FastQC and Cutadapt.
 
@@ -302,7 +302,7 @@ Not in the base environment because it will quickly get messy and you will have 
 
 A Conda environment is a directory that contains a specific collection of conda packages that you have installed. For example, you may have one environment with NumPy 1.7 and its dependencies, and another environment with NumPy 1.6 for legacy testing. If you change one environment, your other environments are not affected. You can easily activate or deactivate environments, which is how you switch between them. 
 
-The following command will create an environment with both tools for sequence quality checks:
+The following command will create one environment for each of the tools that we need for sequence quality checks:
 
     conda create -n fastqc-0.11.9 fastqc=0.11.9
     conda create -n cutadapt-2.10 cutadapt=2.10
