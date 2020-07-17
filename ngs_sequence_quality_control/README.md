@@ -585,7 +585,7 @@ reads-fw.fastq
 ```    
 </details>
 
-### Introduction to the fastq format
+### Introduction to the FASTQ format
 
 The data we get directly from a sequencing facility are FASTQ files. In a FASTQ file, each read is encoded by 4 lines: line 1 (and optionally line 3) contains ID and descriptions, line 2 is the actual nucleic sequence, and line 4 are quality scores for each base of the sequence encoded as ASCII symbols.
 
@@ -694,7 +694,7 @@ The quality of the previous dataset was pretty good from the beginning and we im
 
 ### What is next?
 
-You have checked the quality of your fastq file to ensure that the data looks good before inferring any further information. This step is the usual first step for analyses such as RNA-Seq, ChIP-Seq, or any other OMIC analysis relying on NGS data. 
+You have checked the quality of your FASTQ file to ensure that the data looks good before inferring any further information. This step is the usual first step for analyses such as RNA-Seq, ChIP-Seq, or any other OMIC analysis relying on NGS data. 
 
 You can now create and manage other Conda environments for whatever further OMIC analysis you want to do!
 
