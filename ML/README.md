@@ -11,7 +11,7 @@ elenco dei file che servono
 
 ## [The Secondary Structure Prediction Project]:
 The project stands on the github repository: `https://github.com/vinclaveglia/bcc_2020_packaging`.
-It is composed of several python files and a trained neural networl model.
+It is composed of several Python files and a trained neural network model.
 
 It is necessary that a `setup.py` exists in the project. It is necessary to package the project.
 
