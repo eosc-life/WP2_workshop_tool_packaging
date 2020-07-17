@@ -36,7 +36,7 @@ conda config --show channels
 ### 4. Add the recipe file
 Create a structure folder as /recipes/secondarystructurepredicto/ ???
 
-Create the file `meta.yaml` and paste the following content.
+Create the file `meta.yaml` and paste the following content:
 
 ```
 {% set name = "SecondaryStructurePredictor" %}
