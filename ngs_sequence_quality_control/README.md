@@ -302,7 +302,7 @@ Not in the base environment because it will quickly get messy and you will have 
 
 A Conda environment is a directory that contains a specific collection of conda packages that you have installed. For example, you may have one environment with NumPy 1.7 and its dependencies, and another environment with NumPy 1.6 for legacy testing. If you change one environment, your other environments are not affected. You can easily activate or deactivate environments, which is how you switch between them. 
 
-The following command will create one environment for each of the tools that we need for sequence quality checks:
+The following commands will create one environment for each of the tools that we need for sequence quality checks:
 
     conda create -n fastqc-0.11.9 fastqc=0.11.9
     conda create -n cutadapt-2.10 cutadapt=2.10
