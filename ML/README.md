@@ -1,5 +1,5 @@
 # Protein Secondary Structure Predictor (PyTorch based)
-This tutorial takes the reader to realize a conda package from scratch, starting from a python project.
+This tutorial takes the reader to build a conda package from scratch, starting from a Python project.
 
 ## Pre-requisites
 - Anaconda
@@ -107,4 +107,3 @@ conda install --use-local secondarystructurepredictor
 ```
 
 ## Test the project
-
