@@ -33,7 +33,7 @@ To show the associated channels, run:
 conda config --show channels
 ```
 ### 4. Add the recipe file
-Create the file `meta.yaml` and paste the following content.
+Create the file `meta.yaml` and paste the following content:
 ```
 {% set name = "SecondaryStructurePredictor" %}
 {% set version = "0.1" %}
