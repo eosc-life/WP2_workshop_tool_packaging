@@ -114,7 +114,7 @@ and check the installed packages in the environment with `conda list`.
 To uninstall the package, just type `conda uninstall secondarystructurepredictor`.
 
 ## Test the project
-To test if the conda package installation was successful, open the python shell and the following:
+To test if the conda package installation was successful, open the Python shell and the following:
 ```
 import secondaryStructurePredictor
 import secondaryStructurePredictor.predict as p
