@@ -1,5 +1,5 @@
 # Protein Secondary Structure Predictor (PyTorch based)
-This tutorial takes the reader to create a conda package from scratch, starting from a python project.
+This tutorial takes the reader to create a conda package from scratch, starting from a Python project.
 
 ## Pre-requisites
 - Python >3.5
