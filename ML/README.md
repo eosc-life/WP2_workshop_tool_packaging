@@ -6,8 +6,6 @@ This tutorial takes the reader to create a conda package from scratch, starting 
 - conda
 - conda-build
 
-## Files
-elenco dei file che servono
 
 ## [The Secondary Structure Prediction Project]:
 
