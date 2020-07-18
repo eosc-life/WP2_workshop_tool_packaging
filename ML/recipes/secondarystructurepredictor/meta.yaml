@@ -1,0 +1,35 @@
+
+{% set name = "SecondaryStructurePredictor" %}
+{% set version = "0.1" %}
+
+package:
+  name: "{{ name|lower }}"
+  version: "{{ version }}"
+
+source:
+
+  url: https://github.com/vinclaveglia/secondary_structure_predictor_BCC2020/archive/master.tar.gz
+  
+
+
+build:
+  number: 0
+  script: "{{ PYTHON }} -m pip install --no-deps --ignore-installed . -vv"
+
+
+
+requirements:
+  host:
+    - python
+  run:
+    - python
+    - pytorch-cpu
+    - scikit-learn >=0.20
+
+test:
+  import:
+    - secondaryStructurePredictor
+
+extra:
+  recipe-maintainers:
+    - vinclaveglia
