@@ -73,7 +73,7 @@ extra:
 
 
 ### 5. Build recipe into local channel
-Go into the directory containing the meta.yaml and run:
+Go into the directory containing the `meta.yaml` and run:
 ```
 conda build .
 ```
