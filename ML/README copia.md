@@ -1,5 +1,5 @@
 # Protein Secondary Structure Predictor (PyTorch based)
-This tutorial takes the reader to create a conda package from scratch, starting from a Python project.
+This tutorial takes the reader to create a conda package from scratch, starting from a python project.
 
 ## Pre-requisites
 - Python >3.5
@@ -10,11 +10,11 @@ This tutorial takes the reader to create a conda package from scratch, starting 
 elenco dei file che servono
 
 ## [The Secondary Structure Prediction Project]:
-
 The source code can be found on the github repository: `https://github.com/vinclaveglia/secondary_structure_predictor_BCC2020`.
 It is composed of several python files and a trained neural networl model.
 
 It is necessary that a `setup.py` exists in order to package the project.
+
 
 
 ## [Conda steps]:
@@ -36,7 +36,7 @@ conda config --show channels
 ### 4. Add the recipe file
 Create a structure folder as /recipes/secondarystructurepredicto/ ???
 
-Create the file `meta.yaml` and paste the following content:
+Create the file `meta.yaml` and paste the following content.
 
 ```
 {% set name = "SecondaryStructurePredictor" %}
@@ -109,12 +109,12 @@ conda activate secPredEnv
 ```
 conda install --use-local secondarystructurepredictor
 ```
-Check the installed packages in the environment with `conda list`.
+and check the installed packages in the environment with `conda list`.
 
 To uninstall the package, just type `conda uninstall secondarystructurepredictor`.
 
 ## Test the project
-To test if the conda package installation was successful, open the Python shell and the following:
+To test if the conda package installation was successful, open the python shell and the following:
 ```
 import secondaryStructurePredictor
 import secondaryStructurePredictor.predict as p
