@@ -8,8 +8,10 @@ package:
 
 source:
   #url: https://github.com/vinclaveglia/secondary_structure_prediction/archive/master.zip
-  url: https://github.com/vinclaveglia/bcc_2020_packaging/archive/master.tar.gz
   #url: https://github.com/vinclaveglia/bcc_2020_packaging/blob/master/dist/SecondaryStructurePredictor-0.1dev.tar.gz
+  #url: https://github.com/vinclaveglia/bcc_2020_packaging/archive/master.tar.gz
+  url: https://github.com/vinclaveglia/secondary_structure_predictor_BCC2020/archive/master.tar.gz
+  
 
 
 build:

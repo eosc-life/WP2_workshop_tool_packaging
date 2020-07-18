@@ -10,10 +10,10 @@ This tutorial takes the reader to create a conda package from scratch, starting 
 elenco dei file che servono
 
 ## [The Secondary Structure Prediction Project]:
-The project stands on the github repository: `https://github.com/vinclaveglia/bcc_2020_packaging`.
+The source code can be found on the github repository: `https://github.com/vinclaveglia/secondary_structure_predictor_BCC2020`.
 It is composed of several python files and a trained neural networl model.
 
-It is necessary that a `setup.py` exists in the project. It is necessary to package the project.
+It is necessary that a `setup.py` exists in order to package the project.
 
 
 
