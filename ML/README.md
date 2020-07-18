@@ -34,7 +34,7 @@ To show the associated channels, run:
 conda config --show channels
 ```
 ### 4. Add the recipe file
-Create a structure folder as /recipes/secondarystructurepredicto/ ???
+Create a structure folder as `/recipes/secondarystructurepredictor/`
 
 Create the file `meta.yaml` and paste the following content:
 
